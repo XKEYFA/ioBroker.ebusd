@@ -1,4 +1,4 @@
-![Logo](admin/ebusd.png)
+![Logo](admin/ebus.png)
 # ioBroker.ebusd
 =================
 
