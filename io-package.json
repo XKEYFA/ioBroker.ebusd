@@ -1,0 +1,79 @@
+{
+    "common": {
+        "name":                     "ebusd",
+        "version":                  "0.1.0",
+        "title":                    "EBUSD connection for ioBroker",
+        "desc":                     {
+           "en": "EBUSD Adapter",
+           "de": "EBSUD Adapter",
+           "ru": "EBUSD драйвер"
+	    },
+        "news": {
+          "0.1.0" :{
+            "en": "initial checkin",
+            "de": "initial checkin",
+            "ru": "initial checkin"
+          }
+        },
+		"localLink":                "http://%host%:8083",
+        "platform":                 "Javascript/Node.js",
+        "mode":                     "daemon",
+        "icon":                     "ebus.png",
+        "enabled":                  true,
+	    "extIcon":                  "https://raw.githubusercontent.com/XKEYFA/ioBroker.ebusd/master/admin/ebus.png",
+	    "keywords":                 ["EBUSD"],
+        "readme":                   "https://github.com/XKEYFA/ioBroker.ebusd/blob/master/README.md",
+	    "loglevel":                 "info",
+        "type":                     "iot-systems",
+	"authors": [
+            "hagfb <hagfb@mailland.de>"
+        ]
+    },
+    "native": {
+      "port":                 8888,
+      "host":                 "127.0.0.1",
+      "reconnectTimeout":     300000,
+      "password":             "",
+      "prompt":               "",
+      "ebusdDirectory": 	  "/etc/ebusd"
+    },
+    "objects": [
+
+    ],
+  "instanceObjects": [
+    {
+      "_id":  "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id":  "info.connection",
+      "type": "state",
+      "common": {
+        "role":  "indicator.connected",
+        "name":  "If connected to EBUSD server",
+        "type":  "boolean",
+        "read":  true,
+        "write": false,
+        "def":   false
+      },
+      "native": {}
+    },
+    {
+      "_id":  "info.resync",
+      "type": "state",
+      "common": {
+        "role":  "state",
+        "name":  "read all states from EBUSD anew",
+        "type":  "boolean",
+        "read":  true,
+        "write": true,
+        "def":   false
+      },
+      "native": {}
+    }
+  ]
+}
