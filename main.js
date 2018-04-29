@@ -12,7 +12,7 @@ var fs = require('fs');
 var csv = require('csv-parser');
 //var transform = require('stream-transform');
 
-var adapter = utils.adapter('ebusd');
+var adapter = utils.Adapter('ebusd');
 
 // Telnet sessions
 var telnetOut = null; // read config and write values
