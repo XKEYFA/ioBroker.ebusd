@@ -1,8 +1,8 @@
 {
     "common": {
-        "name":                     "ebusd",
+        "name":                     "",
         "version":                  "0.1.0",
-        "title":                    "EBUSD connection for ioBroker",
+        "title":                    "EBUSD connector",
         "desc":                     {
            "en": "EBUSD Adapter",
            "de": "EBSUD Adapter",
@@ -15,7 +15,8 @@
             "ru": "initial checkin"
           }
         },
-		"localLink":                "http://%host%:8083",
+        "license": "MIT",
+	"localLink":                "http://%host%:8083",
         "platform":                 "Javascript/Node.js",
         "mode":                     "daemon",
         "icon":                     "ebus.png",
