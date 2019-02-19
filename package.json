@@ -1,5 +1,5 @@
 {
-  "name": "ioBroker.ebusd",
+  "name": "iobroker.ebusd",
   "version": "0.1.0",
   "description": "ioBroker ebusd Adapter",
   "author": {
