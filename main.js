@@ -4,7 +4,7 @@
 
 'use strict';
 
-var utils = require(__dirname + '/lib/utils');
+var utils = require('@iobroker/adapter-core');
 var Telnet = require(__dirname + '/lib/telnet');
 
 //require('should');
