@@ -1,6 +1,6 @@
 ![Logo](admin/ebus.png)
 # ioBroker.ebusd
-=================
+![Number of Installations](http://iobroker.live/badges/ebusd-installed.svg) ![Number of Installations](http://iobroker.live/badges/ebusd-stable.svg) =================
 
 This adapter allows connect EBUSD to ioBroker.
 
